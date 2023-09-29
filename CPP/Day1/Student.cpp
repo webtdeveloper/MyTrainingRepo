@@ -13,7 +13,7 @@ class Student
 
     public:
         // Default Constructor
-        Student() = default
+        Student() = default;
         
         //Parameterized Constructor
         Student(
@@ -34,7 +34,7 @@ class Student
         ~Student() {
             std::cout << "Student with roll number : "
                       << this->_roll_number
-                      << "is now destroyed\n";
+                      << " is now destroyed\n";
         }
 
 };
@@ -52,7 +52,7 @@ int main(){
     delete s4;
 
     //Array of stack allocated Student objects
-    Student arr[2] = {s1, s2};
+    Student arr[2] = {s1, s3};
 
     //Array of heap allocated Student objects
     Student* heapArr[2] = {s2, s4};
