@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "Department.h"
+using string = std::string;
 
 class Student
 {
@@ -37,7 +38,21 @@ class Student
                       << " is now destroyed\n";
         }
 
+        friend std::ostream &operator<<(std::ostream &os, const Student &rhs);
+
 };
+
+string displayEnumDepartment(Department dept){
+
+    if(dept == Department::AI_ML){
+        return "AI_ML";
+    }else if(dept == Department::CS){
+        return "CS";
+    }else{
+        return "IT";
+    }
+
+}
 
 int main(){
     
@@ -48,15 +63,31 @@ int main(){
     //heap
     Student* s2 = new Student(102, "Manish", 45000.0f, 'A', Department::IT);
     Student* s4 = new Student(104, "Sandeep", 45000.0f, 'A', Department::IT);
-    delete s2;
-    delete s4;
+
+    std::cout << s1 <<"\n";
+    std::cout << *s2 <<"\n";
+    std::cout << s3 <<"\n";
+    std::cout << *s4 <<"\n";
 
     //Array of stack allocated Student objects
-    Student arr[2] = {s1, s3};
+    // Student arr[2] = {s1, s3};
 
     //Array of heap allocated Student objects
     Student* heapArr[2] = {s2, s4};
-
-
+    
+    for(auto it:heapArr)
+    {
+        delete it;
+    }
 
 }
+
+inline std::ostream &operator<<(std::ostream &os, const Student &rhs) {
+    os << "Roll Number : " << rhs._roll_number
+       << " Name : " << rhs._name
+       << " Fees : " << rhs._fees
+       << " Grade: " << rhs._grade
+       << " Department: " << displayEnumDepartment(rhs._dept);
+    return os;
+}
+
