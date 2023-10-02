@@ -1,5 +1,6 @@
 #include <iostream>
 #include "InsuranceType.h"
+#include "Insurance.h"
 
 class Insurance
 {
@@ -21,3 +22,5 @@ class Insurance
             
         }
 };
+std::string DisplayInsuranceEnum(InsuranceType _type);
+
