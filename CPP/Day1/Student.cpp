@@ -43,7 +43,7 @@ class Student
 };
 
 string displayEnumDepartment(Department dept){
-
+    
     if(dept == Department::AI_ML){
         return "AI_ML";
     }else if(dept == Department::CS){
@@ -51,34 +51,45 @@ string displayEnumDepartment(Department dept){
     }else{
         return "IT";
     }
-
 }
 
 int main(){
     
     //stack
-    Student s1(101, "Shubham", 45000.0f, 'A', Department::CS);
-    Student s3(103, "Ganesh", 45000.0f, 'A', Department::CS);
+    // Student s1(101, "Shubham", 45000.0f, 'A', Department::CS);
+    // Student s3(103, "Ganesh", 45000.0f, 'A', Department::CS);
 
     //heap
-    Student* s2 = new Student(102, "Manish", 45000.0f, 'A', Department::IT);
-    Student* s4 = new Student(104, "Sandeep", 45000.0f, 'A', Department::IT);
+    Student* s1 = new Student(101, "Manish", 45000.0f, 'A', Department::IT);
+    Student* s2 = new Student(102, "Sandeep", 45000.0f, 'A', Department::IT);
+    Student* s3 = new Student(103, "Shubham", 45000.0f, 'A', Department::CS);
+    Student* s4 = new Student(104, "Ganesh", 45000.0f, 'A', Department::CS);
+    Student* s5 = new Student(105, "Rahul", 45000.0f, 'A', Department::AI_ML);
 
-    std::cout << s1 <<"\n";
-    std::cout << *s2 <<"\n";
-    std::cout << s3 <<"\n";
-    std::cout << *s4 <<"\n";
+    // std::cout << *s1 <<"\n";
+    // std::cout << *s2 <<"\n";
+
+    // std::cout << s3 <<"\n";
+    // std::cout << *s4 <<"\n";
 
     //Array of stack allocated Student objects
     // Student arr[2] = {s1, s3};
 
     //Array of heap allocated Student objects
-    Student* heapArr[2] = {s2, s4};
+
+    Student* heapArr[5] = {s1, s2, s3, s4 , s5};
+
+    for(auto it:heapArr)
+    {
+        std::cout<< *it <<"\n";
+    }
     
     for(auto it:heapArr)
     {
         delete it;
     }
+
+    //delete [] heapArr;
 
 }
 
