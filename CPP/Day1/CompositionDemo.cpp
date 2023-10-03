@@ -1,7 +1,7 @@
 /*
 
 Composotion : 
-Class A is made by using class B in such a way that class B cannot exist independently but class A has
+            Class A is made by using class B in such a way that class B cannot exist independently but class A has
  its own existence.
 
 */
