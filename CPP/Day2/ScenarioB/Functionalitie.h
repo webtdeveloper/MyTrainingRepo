@@ -1,0 +1,6 @@
+#ifndef FUNCTIONALITIE_H
+#define FUNCTIONALITIE_H
+
+
+
+#endif // FUNCTIONALITIE_H
