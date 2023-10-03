@@ -1,7 +1,7 @@
 #ifndef FUNCTIONALITIE_H
 #define FUNCTIONALITIE_H
 
-#include "Car.h"
+#include "Vehicle.h"
 
 void CreateObjects(Vehicle* garage[3]);
 

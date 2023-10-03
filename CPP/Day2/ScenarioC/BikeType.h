@@ -5,6 +5,6 @@ enum class BikeType{
     COMMUTE,
     SPORTS,
     ATV
-}
+};
 
 #endif // BIKETYPE_H

@@ -10,6 +10,6 @@ Bike::Bike(std::string id, std::string brand, VehicleType type, float mileage, B
 {
 }
 
-float Bike::CalcucateTax(){
+float Bike::CalculateTax(){
     return 0.05f * price();
 }

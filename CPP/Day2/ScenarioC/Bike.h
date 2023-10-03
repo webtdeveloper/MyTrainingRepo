@@ -27,9 +27,9 @@ class Bike : public Vehicle
             float mileage,
             BikeType btype);
 
-        float CalcucateTax() override;
+        float CalculateTax() override;
 
-        Bike();
+    
 
 
         ~Bike() {

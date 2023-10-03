@@ -31,7 +31,7 @@ class Vehicle
         //Define a abstract method or pure virtual function
         virtual float CalculateTax() = 0;
 
-        ~Vehicle() {
+        virtual ~Vehicle() {
             std::cout <<" Object with ID: " <<_id <<" is destroyed\n";
         }
 
