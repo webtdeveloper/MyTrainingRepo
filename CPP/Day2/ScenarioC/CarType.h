@@ -5,6 +5,6 @@ enum class CarType{
     SUV,
     SEDAN,
     HATCHBACK
-}
+};
 
 #endif // CARTYPE_H
