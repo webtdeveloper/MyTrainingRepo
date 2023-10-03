@@ -30,6 +30,7 @@ class Vehicle
         //defaulted copy constructor
         //I will not write the body of copy constructor. Compiler should generate a default
         //version of it during compilation
+        
         Vehicle(const Vehicle&) = default;
 
         // Vehicle(const Vehicle& obj){
