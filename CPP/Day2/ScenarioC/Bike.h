@@ -3,6 +3,7 @@
 
 #include "BikeType.h"
 #include "Vehicle.h"
+#include <ostream>
 
 class Bike : public Vehicle
 {
@@ -29,12 +30,15 @@ class Bike : public Vehicle
 
         float CalculateTax() override;
 
-    
-
-
         ~Bike() {
             std::cout<<"Bike part of vehicle with ID: "<<id()<<" is destroyed\n";
         }
+
+        friend std::ostream &operator<<(std::ostream &os, const Bike &rhs);
+
+        
 };
+
+std::string DisplayBikeEnum(const BikeType value);
 
 #endif // BIKE_H

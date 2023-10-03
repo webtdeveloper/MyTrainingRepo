@@ -8,7 +8,11 @@
 void CreateObjects(Vehicle* garage[3]){
     garage[0] = new Car("v101", "Maruti", VehicleType::CAR, 900000.0f, CarType::HATCHBACK);
     garage[1] = new Bike("bk111", "Bajaj", VehicleType::BIKE,200000.0f, 23.0f, BikeType::COMMUTE );
-    garage[2] = new Car("v103", "Toyota", VehicleType::CAR, 1200000.0f, CarType::SUV);
+    garage[2] = new Car("v103", "Toyota", VehicleType::CAR, 120000.0f, CarType::SUV);
+
+    for(int i = 0; i < 3; i++){
+        std::cout<< *(garage[i]) <<"\n";
+    }
 }
 
 //Calculate AveragePrice

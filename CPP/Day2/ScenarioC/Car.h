@@ -3,6 +3,7 @@
 
 #include "Vehicle.h"
 #include "CarType.h"
+#include <ostream>
 
 
 class Car : public Vehicle
@@ -20,10 +21,16 @@ class Car : public Vehicle
         float CalculateTax() override;
 
         ~Car() {
-            std::cout<<"Car part of vehicle with ID: " <<id() <<"is deatroyed\n";
+            std::cout<<"Car part of vehicle with ID: " <<id() <<" is deatroyed\n";
         }
 
+        
+
         CarType carType() const { return _car_type; }
+
+        friend std::ostream &operator<<(std::ostream &os, const Car &rhs);
 };
+
+std::string DisplayCarEnum(const CarType value);
 
 #endif // CAR_H
