@@ -1,0 +1,1 @@
+We want create objects of multiple classes (WHICH ARE PART OF INHERITANCE HI)
