@@ -1,4 +1,4 @@
-#include "Functionalitie.h"
+#include "Functionalities.h"
 #include "Vehicle.h"
 #include "VehicleType.h"
 #include "Car.h"
@@ -23,13 +23,15 @@ float AveragePrice(Car *container[3])
 //Call CalculateTax Function by each object
 void CallCalculateTax(Car* container[3]){
     for(int i = 0; i < 3; i++){
-        std::cout << (arr[i])->CalculateTax() <<"\n";
+        std::cout << (container[i])->CalculateTax() <<"\n";
     }
 }
 
 //Free all the Car's object
-void FreeMemory(Car* container){
+void FreeMemory(Car* container[3])
+{
     for(int i = 0; i < 3; i++){
-        delete arr[i];
+        delete container[i];
     }
 }
+

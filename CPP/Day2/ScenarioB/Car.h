@@ -14,7 +14,7 @@ class Car : public Vehicle
         Car(std::string id, std::string brand, VehicleType type, float price, CarType cType);
 
         //3+1
-        car(std::string id, std::string brand, VehicleType type, CarType cType);
+        Car(std::string id, std::string brand, VehicleType type, CarType cType);
 
         float CalculateTax() override;
 

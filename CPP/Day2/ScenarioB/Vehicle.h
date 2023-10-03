@@ -29,7 +29,7 @@ class Vehicle
         Vehicle(const Vehicle& obj) = default;
 
         //Define a abstract method or pure virtual function
-        float CalculateTax() = 0;
+        virtual float CalculateTax() = 0;
 
         ~Vehicle() {
             std::cout <<" Object with ID: " <<_id <<" is destroyed\n";
