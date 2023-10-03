@@ -9,12 +9,16 @@ using CustomerContainer = std::array<Customer*,8>;
 int main(){
 
     CustomerContainer container;
+
     CreateObjects(container);
+
     std::cout<<"Container Data : "<<std::endl;
     for(auto it: container)
     {
         std::cout << *it << std::endl;
     }
+    
+    std::cout<<"\n\n";
 
 
     std::cout<<"CustomerType Data : "<<std::endl;
@@ -24,12 +28,16 @@ int main(){
         std::cout << *it << std::endl;
     }
 
+    std::cout<<"\n\n";
+
     std::cout<<"Customer Creadit Data : "<<std::endl;
     std::vector<Customer*> CustomerCreditResult = CustomerCredit(container);
     for(auto it: CustomerCreditResult)
     {
         std::cout << *it << std::endl;
     }
+
+    std::cout<<"\n\n";
 
     std::cout << "Result Average of Specific CustomerType : " << std::endl;
     float res = AverageCredit(container, CustomerType::REGULAR);

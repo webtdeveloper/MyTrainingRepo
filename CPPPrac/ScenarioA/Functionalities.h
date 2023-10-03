@@ -1,9 +1,11 @@
 #ifndef FUNCTIONALITIES_H
 #define FUNCTIONALITIES_H
 
+#include "Customer.h"
+
 #include<array>
 #include<vector>
-#include "Customer.h"
+
 
 using CustomerContainer = std::array<Customer*,8>;
 
@@ -14,5 +16,6 @@ std::vector<Customer*> CustomerTypeContainer(CustomerContainer &container, Custo
 std::vector<Customer*> CustomerCredit(CustomerContainer &container);
 
 float AverageCredit(CustomerContainer &container, CustomerType _type);
+
 
 #endif // FUNCTIONALITIES_H

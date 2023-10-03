@@ -1,6 +1,7 @@
 #include "Functionalities.h"
 #include "CustomerType.h"
 #include "Customer.h"
+
 #include<array>
 #include<vector>
 
