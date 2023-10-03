@@ -2,6 +2,7 @@
 #include "Insurance.cpp"
 
 #include "VehicleType.h"
+#include "Vehicle.h"
 
 class Vehicle
 {
