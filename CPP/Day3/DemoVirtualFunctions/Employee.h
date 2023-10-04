@@ -13,7 +13,8 @@ class Employee
     void applyForLeaves(){
         std::cout <<"Employee applies for leave on\n";
     }
-
+    
+    //Virtual Function
     virtual void payTax(){
         std::cout<<"Employee pays 20% of salary\n";
     }
