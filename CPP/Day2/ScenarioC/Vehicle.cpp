@@ -14,6 +14,7 @@ Vehicle::Vehicle(std::string id, std::string brand, VehicleType type)
 {
 
 }
+
 std::ostream &operator<<(std::ostream &os, const Vehicle &rhs) {
     os << "ID : " << rhs._id
        << " Brand: " << rhs._brand

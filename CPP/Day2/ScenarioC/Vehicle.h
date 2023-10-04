@@ -46,7 +46,7 @@ class Vehicle
         friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
 
         
-};
+}; 
 
 std::string DisplayEnum(const VehicleType value);
 

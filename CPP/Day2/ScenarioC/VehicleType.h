@@ -4,7 +4,7 @@
 enum class VehicleType{
     CAR, 
     BIKE,
-    OTHER
+    OTHER 
 };
 
 #endif // VEHICLETYPE_H

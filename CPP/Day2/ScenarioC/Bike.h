@@ -34,6 +34,10 @@ class Bike : public Vehicle
             std::cout<<"Bike part of vehicle with ID: "<<id()<<" is destroyed\n";
         }
 
+        float bikeMileage() const { return _bike_mileage; }
+
+        BikeType bikeType() const { return _bike_type; }
+
         friend std::ostream &operator<<(std::ostream &os, const Bike &rhs);
 
         

@@ -29,7 +29,7 @@ float AveragePrice(Vehicle *garage[3])
 //Call CalculateTax Function by each object
 void CallCalculateTax(Vehicle* garage[3]){
     for(int i = 0; i < 3; i++){
-        std::cout << (garage[i])->CalculateTax() <<"\n";
+        std::cout <<"Tax : "<< (garage[i])->CalculateTax() <<"\n";
     }
 }
 
