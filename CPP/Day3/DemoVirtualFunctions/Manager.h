@@ -1,36 +1,33 @@
 #ifndef MANAGER_H
 #define MANAGER_H
 
-#include "Employee.h"
 #include<iostream>
+#include "Employee.h"
 
 class Manager : public Employee
 {
     private:
-
+        
     public:
-
         Manager() = default;
 
-        void applyForLeaves()
-        {
-            std::cout << "Manager applies for leave on\n";
+        void applyForLeaves(){
+            std::cout << "Manager applies for leave\n";
         }
 
-        void payTax()
-        {
-            std::cout << "Manager pays 10% of salary\n";
+        //Virtual Function
+        virtual void PayTax(){
+            std::cout << "Manager pays 25% of salary\n";
         }
 
-        // void Display()
-        // {
-        //     std::cout << "Manager Display called\n";
+        // virtual void Display(){
+        //     std::cout << "Manager Display Called\n";
         // }
 
-        ~Manager()
-        {
+        ~Manager() {
             std::cout << "Manager Destroyed\n";
         }
 };
+
 
 #endif // MANAGER_H
