@@ -2,6 +2,8 @@
 #include "Vehicle.h"
 #include "VehicleType.h"
 
+#include <memory>
+
 
 int main(){
     Vehicle* arr[3];
@@ -16,5 +18,7 @@ int main(){
     MinPriceCarDetails(arr);
 
     MaxPriceCarDetails(arr);
+
+    std::unique_ptr<Vehicle> uptr;
 
 }
