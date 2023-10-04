@@ -30,6 +30,7 @@ class Vehicle
             <<" is destroyed\n";
         }
 
+        //Function Overloading
         float CalculateTax();
 
         float CalculateTax(float tax_percentage);
