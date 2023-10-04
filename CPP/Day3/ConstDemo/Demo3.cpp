@@ -4,7 +4,7 @@ void Demo(){
     int n1 = 10;
     int n2 = 20;
     //const is applied on 'int' not on 'int*'
-    const int* ptr = &n1;
+    int const * ptr = &n1;
 
     //since pointer itself is not constant, its 'constant' can be changed,
     //so address inside ptr can be changed
