@@ -3,17 +3,6 @@
 
 #include <iostream>
 
-Vehicle::Vehicle(std::string id, std::string brand, VehicleType type, float price)
-    :_id(id), _brand(brand), _type(type), _price(price)
-{
-
-}
-
-Vehicle::Vehicle(std::string id, std::string brand, VehicleType type)
-    :_id(id), _brand(brand), _type(type)
-{
-
-}
 
 std::ostream &operator<<(std::ostream &os, const Vehicle &rhs) {
     os << "ID : " << rhs._id
@@ -34,4 +23,9 @@ std::string DisplayEnum(const VehicleType value)
     else{
         return "OTHER";
     }
+}
+
+Vehicle::Vehicle(std::string id, std::string brand, float price, VehicleType type)
+   : _id(id), 
+{
 }
