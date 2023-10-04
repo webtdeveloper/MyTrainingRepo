@@ -7,7 +7,10 @@
 */
 
 void Demo(){
+    
+    //n1 is a "constant integer"
     const int n1 = 10;
+    //grade is a "constant character"
     const char grade = 'A';
 
     std::cout << n1 <<"\t" << grade << "\n";
