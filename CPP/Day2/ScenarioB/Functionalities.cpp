@@ -23,7 +23,7 @@ float AveragePrice(Car *container[3])
 //Call CalculateTax Function by each object
 void CallCalculateTax(Car* container[3]){
     for(int i = 0; i < 3; i++){
-        std::cout << (container[i])->CalculateTax() <<"\n";
+        std::cout <<"Tax : " << (container[i])->CalculateTax() <<"\n";
     }
 }
 
