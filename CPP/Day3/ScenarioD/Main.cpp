@@ -19,6 +19,20 @@ int main(){
 
     MaxPriceCarDetails(arr);
 
-    std::unique_ptr<Vehicle> uptr;
+    std::cout<< "Simple Tax : " << arr[0]->CalculateTax() << "\n";
+    std::cout<< "Simple Tax : " << arr[1]->CalculateTax() << "\n";
+    std::cout<< "Simple Tax : " << arr[2]->CalculateTax() << "\n";
+
+    std::cout<< "User Tax : " << arr[0]->CalculateTax(0.15f) << "\n";
+    std::cout<< "User Tax : " << arr[1]->CalculateTax(0.16f) << "\n";
+    std::cout<< "User Tax : " << arr[2]->CalculateTax(0.18f) << "\n";
+
+    std::cout<< "Central State Tax : " << arr[0]->CalculateTax(0.09f, .09f) << "\n";
+    std::cout<< "Central State Tax : " << arr[1]->CalculateTax(0.09f, 0.09f) << "\n";
+    std::cout<< "Central State Tax : " << arr[2]->CalculateTax(0.09f, 0.09f) << "\n";
+
+
+
+    //std::unique_ptr<Vehicle> uptr;
 
 }
