@@ -28,7 +28,8 @@ class Complex
             std::cout<<this->_real <<" + " <<this->_imag<<"i\n";
         }
 
-        friend std::ostream &operator<<(std::ostream &os, const Complex &rhs);
+        //friend std::ostream &operator<<(std::ostream &os, const Complex &rhs);
+        friend std::ostream &operator<<(std::ostream &os, const Complex &rhs)
 };
 
 inline std::ostream &operator<<(std::ostream &os, const Complex &rhs) {
