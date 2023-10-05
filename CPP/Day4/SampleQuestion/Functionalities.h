@@ -13,7 +13,7 @@
 void CreateObjects(Employee* arr1[3], Project* arr2[3]);
 
 /*
-   A function to return the pointer to the Employee with highest salary
+   A function to return the pointer to the Employee with highest salary 
 */
 
 Employee* EmployeeWithHighestSalary(Employee* arr[3]);

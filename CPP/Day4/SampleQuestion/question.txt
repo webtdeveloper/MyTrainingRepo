@@ -10,3 +10,15 @@ Create a class Project with the following attributes
    - _name which is a string
    - _duration_days which is an integer
    - _budget which is a float
+
+1. A function to create 3 objects of Project in an arry. Also, create 3 objects of Employees in a separate
+   array. Link one project to one Employee
+   Input: 2 arrays (in one for Employees), (second for Project)
+   Output: void
+
+2. A function to return the pointer to the Employee with highest salary
+
+3. A function to return the count of all Employees in the array whose _dept value matches with the
+   second parameter passed to this function
+
+4. Find the average budget of all the Project
