@@ -31,7 +31,7 @@ class Employee
             for(std::string element : rhs._skills){
                 os << element <<" ";
             }
-            
+
             os   << " _id: " << rhs._id
                << " _age: " << rhs._age;
             return os;
@@ -45,6 +45,8 @@ int main(){
     //object of class Employee of list of strings
     Employee<ls>* e1 = new Employee<ls>(skills, "emp101", 28.4f);
     std::cout<<*e1<<"\n";
+    
+    delete e1;
 }
 
 
