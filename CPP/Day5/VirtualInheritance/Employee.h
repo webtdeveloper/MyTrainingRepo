@@ -11,7 +11,7 @@ class Employee
 
     public:
 
-        Employee() = default;//defalted default constructor
+        Employee() = default;//defaulted default constructor
 
         Employee(std::string id, std::string name)
          : _id(id), _name(name)
