@@ -10,6 +10,9 @@ class Employee
         std::string _name;
 
     public:
+
+        Employee() = default;//defalted default constructor
+
         Employee(std::string id, std::string name)
          : _id(id), _name(name)
         {

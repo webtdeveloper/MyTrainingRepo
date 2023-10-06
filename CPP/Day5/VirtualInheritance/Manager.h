@@ -15,7 +15,12 @@ class Manager : virtual public Employee
         {
         }
 
-        virtual void CalculateTax() override{
+        Manager(int team_size)
+        : _team_size(team_size)
+        {
+        }
+
+        void CalculateTax() override{
             std::cout << "Manager Pays 20% Tax\n";
         }
 

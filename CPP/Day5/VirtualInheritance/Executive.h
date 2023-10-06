@@ -15,7 +15,12 @@ class Executive : virtual public Employee
         {
         }
 
-        virtual void CalculateTax() override{
+        Executive(std::string location)
+        :_location(location)
+        {
+        }
+
+        void CalculateTax() override{
             std::cout << "Executive Pays 30% Tax\n";
         }
 

@@ -4,7 +4,7 @@
 #include "Employee.h"
 #include "Manager.h"
 #include "Executive.h"
-#include <ostream>
+#include <iostream>
 
 /*
     In Multiple inheritance in CPP, the most derived class is responsible for instantiating
@@ -19,7 +19,7 @@ class Director : public Manager, public Executive
     public:
         Director(std::string id, std::string name, int team_size, std::string location, 
         float budget)
-         : Employee(id, name), Manager(id, name, team_size), Executive(id, name, location),
+         : Employee(id, name), Manager(team_size), Executive(location),
           _budget(budget)
         {
         }
