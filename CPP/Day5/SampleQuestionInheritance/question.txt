@@ -3,11 +3,14 @@ Create a class Card with attributes
      - _cvv_number which is a 3 digit number
      - _issuer which is either VISA, MASTERCARD, or RUPAY
      - _annual_charge which is a float value
+     - _limit which is an integer value
+
      - An abstract method CalculateTaxOnCharge which returns float and takes 0 arguments
 
 
 Create a class DebitCard with attributes
     - _category which is either PREMIUM, SIGNATURE or DELUXE
+
     - An override CalculateTaxOnCharge implements which return 
       (_limit/100) * _annual_charge if ISSUER is VISA
       (_limit/50) * _annual_charge if ISSUER is MASTERCARD
@@ -15,7 +18,8 @@ Create a class DebitCard with attributes
       
 
 Create a class CreditCard with attributes
-    - _limit which is an integer value
+    - _transaction_limit which is a float value
+    - An overriden CalculateTaxOnCharge implementation which return (_limit/100)*_annual_charge
 
 Create the following functionalities.cpp functions 
 
