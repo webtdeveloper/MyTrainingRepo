@@ -12,4 +12,10 @@ int main(){
     for(int i = 0; i < SIZE; i++){
         std::cout << *arr[i] <<"\n";
     }
+
+    CallCalculateTaxOnCharge(arr);
+
+    Card** ans;
+
+    MathcingCardType(arr, CardType::MASTERCARD, ans);
 }
